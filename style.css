@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333652;
+    text-align: center;
+    font-family: "Montserrat";
+}
+.buttons-wrapper{
+    margin:1rem;
+}
+#emoji-input{
+    border-radius: 1rem;
+    padding:1rem;
+}
+.wrapper{
+    margin:auto;
+    background-color: #E9EAEC;
+    border-radius: 1rem;
+    padding:1rem;
+    border: 1px solid #FAD02C;
+}
+#emoji-container{
+    font-size: 3rem;
+}
