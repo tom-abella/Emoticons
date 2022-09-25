@@ -13,6 +13,7 @@ body{
 #emoji-input{
     border-radius: 1rem;
     padding:1rem;
+    width:20rem;
 }
 .wrapper{
     margin:auto;
@@ -21,6 +22,6 @@ body{
     padding:1rem;
     border: 1px solid #FAD02C;
 }
-#emoji-container{
+#emoji-container,.mine{
     font-size: 3rem;
 }

@@ -1,10 +1,11 @@
-let myEmojis = ["👨‍💻", "⛷", "🍲"]
-const emojiFromlocalStorage = JSON.parse(localStorage.getItem("myEmojis")) 
+let myEmojis = []
+
 const emojiContainer = document.getElementById("emoji-container")
 const emojiInput = document.getElementById("emoji-input")
 const addBtn = document.getElementById("add-btn")
 const removeBtn = document.getElementById("remove-btn")
 const removeAllBtn = document.getElementById("removeAll-btn")
+const mine = document.querySelector(".mine")
 
     renderEmojis()
 
@@ -20,23 +21,23 @@ function renderEmojis() {
 
 //Add Emoji
 addBtn.addEventListener("click", function(){
+mine.textContent = "";
     if (emojiInput.value) {
         myEmojis.push(emojiInput.value)
-        localStorage.setItem("myEmoji",JSON.stringify(myEmojis.value))
         emojiInput.value = ""
         renderEmojis()
     }
 })
 //remove Emoji
 removeBtn.addEventListener("click", function() {
+    mine.textContent = "";
     myEmojis.pop()
-    localStorage.removeItem("myEmoji",JSON.stringify(myEmojis.value))
     renderEmojis()
 })
 
 removeAllBtn.addEventListener("click", function() {
+    mine.textContent = "";
     myEmojis = []
-    localStorage.removeItem("myEmoji",JSON.stringify(myEmojis.value))
     renderEmojis()
 })
 
